@@ -1,4 +1,0 @@
-just some variables saved here
-
-name="luffy"
-occupation="King of pirates"

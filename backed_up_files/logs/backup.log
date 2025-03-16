@@ -1,4 +1,9 @@
-total 60 is saved in backed_up_files/ folder
-backup_2025-03-15-23H51M27S.tar is saved in backed_up_files/ folder
-2025-03-15 23:54:27 \e[32mSUCCESS\e[0m backup_2025-03-15-23H54M27S.tar is saved in backed_up_files/ folder
-2025-03-15 23:55:06 [32mSUCCESS[0m backup_2025-03-15-23H55M06S.tar is saved in backed_up_files/ folder
+2025-03-16 12:37:41 [32mSUCCESS[0m backup_2025-03-16_12H%_37M_41S.tar is saved in backed_up_files/ folder
+ [31mERROR[0m There was an issue in backing up files
+2025-03-16 12:40:27 [32mSUCCESS[0m backup_2025-03-16_12H%_40M_27S.tar is saved in backed_up_files/ folder
+2025-03-16 12:43:07 [32mSUCCESS[0m backup_2025-03-16_12H%_43M_07S.tar is saved in backed_up_files/ folder
+2025-03-16 12:44:02 [32mSUCCESS[0m backup_2025-03-16_12H%_44M_02S.tar is saved in backed_up_files/ folder
+ [31mERROR[0m There was an issue in backing up files
+2025-03-16 12:55:14 [32mSUCCESS[0m backup_2025-03-16_12H_55M_14S.tar is saved in backed_up_files/ folder
+2025-03-16 12:58:47 [31mERROR[0m There was an issue in backing up files
+2025-03-16 12:59:11 [32mSUCCESS[0m backup_2025-03-16_12H_59M_11S.tar is saved in backed_up_files/ folder
