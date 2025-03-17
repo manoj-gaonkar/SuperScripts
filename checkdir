@@ -1,0 +1,14 @@
+#!/bin/bash
+
+cd /home
+
+for DIR in *;
+do
+	count=$(grep -c "/home/$DIR" /etc/passwd)
+	if [[ $count -ge 1 ]];
+	then
+	echo -e "\e[32mOK\e[0m $DIR is assigned to user"
+	else
+	echo -e "\e[31mNOK\e[0m $DIR is not assigned to the user"
+	fi
+done
