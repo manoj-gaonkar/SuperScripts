@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Description: This script logs the live error messages to a file in realtime
+
+# Instructions:
+# nohup ./logtracker &
+# use the above command to run it in background
+
+tail -fn 0 /home/manoj/learn/scripts/RealWorldScripts/logs/sample.log | while read line
+do
+	echo $line | grep -iE "refused|fail|error|warning|lost|shutdown|offline"
+	if [[ $? -eq 0 ]];
+	then
+		echo $line >> /home/manoj/learn/scripts/RealWorldScripts/logs/errorsinsample.log
+	fi
+done
+
