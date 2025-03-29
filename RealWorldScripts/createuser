@@ -1,0 +1,38 @@
+#!/bin/bash
+
+
+echo "Enter the username:"
+read uname
+grep -q "$uname" /etc/passwd
+if [[ "$?" -eq 0 ]];
+then
+	echo "user $u already exists"
+	echo "Please use a different username"
+	echo
+	exit 1
+fi
+
+echo "Please provide user description"
+read d
+
+
+echo "Do you want to specify user id (y/n)?"
+read confirm
+echo
+
+if [[ $confirm =~ ^(y|yes|Y|Yes)$ ]];
+then
+	echo "Please enter user id:"
+	read uid
+
+	sudo useradd "$uname" -c "$d" -u "$uid"
+	echo
+	echo "$uname account has been created"
+elif [[ $confirm =~ ^(n|no|No|N)$ ]];
+then
+	echo "id will be automatically assigned"
+	sudo useradd "$uname" -c "$d"
+	echo
+	echo "$uname account has been created"
+fi
+

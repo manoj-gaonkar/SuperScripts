@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "Enter the day (e.g. Mon)"
+read dayval
+
+echo "Enter the month (e.g. Sep)"
+read monval
+
+echo "Enter the date (e.g. 28)"
+read dateval
+
+USERLIST=$(last | grep "$dayval $monval $dateval" | awk '{print $1}')
+
+echo "$USERLIST"
